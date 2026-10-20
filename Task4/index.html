@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship application portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Internship Application Portal</h1>
+        <p>Fill the internship form</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Application form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Applicant Details</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"
+                           minlength="3" maxlength="40" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"
+                           pattern="[0-9]{11}"
+                           title="Enter 11 digits" required>
+                    <br><br>
+
+                    <label for="birth">Date of Birth:</label>
+                    <input type="date" id="birth" name="birth"
+                           min="1990-01-01" max="2010-12-31">
+                    <br><br>
+
+                    <label for="interview">Available Date and Time:</label>
+                    <input type="datetime-local" id="interview"
+                           name="interview">
+                    <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skills and Experience</legend>
+
+                    <label for="skill">Main Skill:</label>
+                    <input type="text" id="skill" name="skill"
+                           list="skillOptions" required>
+
+                    <datalist id="skillOptions">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="Javascript">
+                    </datalist>
+                    <br><br>
+
+                    <label for="portfolio">Portfolio URL:</label>
+                    <input type="url" id="portfolio" name="portfolio">
+                    <br><br>
+
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume"
+                           accept=".pdf,.doc,.docx" required>
+                    <br><br>
+
+                    <label for="certificates">Certificates:</label>
+                    <input type="file" id="certificates"
+                           name="certificates"
+                           accept=".pdf,.jpg,.png" multiple>
+                    <br><br>
+
+                    <label for="experience">Experience (years):</label>
+                    <input type="number" id="experience"
+                           name="experience"
+                           min="0" max="10" step="1" value="0">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Application Status</legend>
+
+                    <label for="status">Application Code:</label>
+                    <input type="text" id="status"
+                           value="INT2026" readonly>
+                    <br><br>
+
+                    <label for="review">Review Status:</label>
+                    <input type="text" value="Not open yet" disabled>
+                    <br><br>
+
+                    <label for="progress">Application Progress:</label>
+                    <progress id="progress" value="60" max="100">
+                        60%
+                    </progress>
+                    <p>Example progress: 60%</p>
+
+                    <output name="message">
+                        Complete all required fields before applying.
+                    </output>
+                </fieldset>
+
+                <section>
+                    <h3>Terms and Conditions</h3>
+                    <p>
+                        Please read the <u>application instructions</u>.
+                        Your <b>resume</b> must be correct.
+                        <i>False information</i> may affect your application.
+                    </p>
+
+                    <p>
+                        <del>Applications require two years of experience.</del>
+                        <ins>Fresh graduates are welcome to apply.</ins>
+                    </p>
+
+                    <p>Old application fee: <s>Rs. 500</s> Free</p>
+                    <p>Example: Subscript<sub>below</sub> and Superscript<sup>above</sup></p>
+
+                    <p>Urdu Words: <bdi>اب ج د ے</bdi></p>
+                    <p><bdo dir="rtl">Example text</bdo></p>
+
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the terms and conditions.
+                    </label>
+                </section>
+
+                <p>
+                    <input type="submit" value="Submit Application">
+                    <input type="reset" value="Reset Form">
+                    <input type="button" value="Check Status">
+                </p>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Other HTML Examples</h2>
+
+            <h3>Image Map</h3>
+            <img src="image.png" usemap="#image-map">
+            <map name="image-map">
+                <area target="_blank" alt="Square" title="Square" href="square.png" coords="24,32,131,145" shape="square">
+                <area target="_blank" alt="Circle" title="Circle" href="circle.png" coords="209,91,55" shape="circle">
+            </map>
+
+
+            <h3>Reusable Template</h3>
+            <template id="thankYou">
+                <p>Thank you for applying!</p>
+            </template>
+
+            <h3>More Examples</h3>
+            <p>Interview time: <time datetime="09:00">9:00 AM</time></p>
+
+            <noscript>
+                JavaScript is disabled. Some interactive features may not work.
+            </noscript>
+        </section>
+
+        <hr>
+    </main>
+
+    <footer>
+        <p>Intern Application Portal</p>
+        <address>Contact: abc@example.com</address>
+    </footer>
+    
+</body>
+</html>

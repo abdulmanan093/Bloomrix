@@ -12,35 +12,29 @@
         <p>This is beginner course to learn the HTML.</p>
 
         <nav>
-            <ul>
-                <li><a href="#overview">Course Overview</a></li>
-                <li><a href="#lessons">Lessons</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+            <a href="#overview">Course Overview</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#media">Media</a>
+            <a href="#faq">FAQ</a>
         </nav>
     </header>
 
     <hr>
 
     <main>
-        <section id="overview"><h2>1. Course Overview</h2>
+        <section id="overview">
+            <h2>1. Course Overview</h2>
             <p>Overview about the Complete course. </p>
 
-            <picture>
-                <source>
-                <img src="image.png" alt="Course Banner" width="400" height="150">
-            </picture>
-
+            
             <figure>
-                <img src="https://via.placeholder.com/350x200" alt="HTML Learning Roadmap" width="350" height="200">
-                <figcaption>Figure 1: Intern Learning Roadmap for Frontend Training.</figcaption>
+                <picture>
+                    <img src="image.png" alt="Google home page" width="400" height="150">
+                </picture>
+
+                <figcaption>figure: Overview fo the course</figcaption>
             </figure>
-  
-            <blockquote cite="https://www.w3.org/standards/">
-                Semantic HTML provides meaning to web content, making it accessible to everyone.
-            </blockquote>
-            <p>Tim Berners-Lee once said, <q>The power of the Web is in its universality.</q> Found in <cite>World Wide Web Consortium Notes</cite>.</p>
+
         </section>
 
         <hr>
@@ -49,36 +43,28 @@
             <h2>2. Course Lessons</h2>
 
             <article>
-                <h3>Lesson 1: Working with Computer Code & Output</h3>
-                <p>In HTML, we use specific tags to represent code and user interactions:</p>
-                
-                <p>To save your work in VS Code, press <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
-                
-                <p>The code to print a message in JavaScript is <code>console.log("Hello, Interns!");</code>.</p>
-                
-                <p>Here is sample terminal output: <samp>Compilation Successful: 0 errors found.</samp></p>
+                <h3>Lesson 1: HTML basics</h3>
+                <p>HTML stands for
+                    <abbr title="HyperText Markup Language">HTML</abbr>.
+                </p>
+            </article>
 
-                <pre>
-&lt;!-- Simple HTML Structure --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Hello World&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-                </pre>
+            <article>
+                <h3>Lesson 2: Semantic Tags</h3>
+                <p>Semantic tags explain the purpose of content.</p>
+                <p>Use <code>&lt;header&gt;</code> for a header.</p>
             </article>
 
             <aside>
-                <h4>Intern Tip:</h4>
-                <p>Always close your tags properly and maintain clean indentation for readability.</p>
+                <h3>Quick Tip</h3>
+                <p>Practise writing HTML every day.</p>
             </aside>
         </section>
 
         <hr>
 
         <section id="media">
-            <h2>3. Audio, Video, and Embedded Resources</h2>
+            <h2>3. Audio and Video lessons</h2>
 
             <h3>Course Introduction Audio</h3>
             <audio controls>
@@ -88,17 +74,14 @@
             <h3>Lesson Walkthrough Video</h3>
             <video width="400" height="250" controls>
                 <source src="video-sample.mp4" type="video/mp4">
-                <track src="subtitles-en.vtt" kind="subtitles" srclang="en" label="English">
             </video>
 
-            <h3>Embedded Reference (Wikipedia)</h3>
-            <iframe src="https://en.wikipedia.org/wiki/HTML" title="Wikipedia HTML Article" width="500" height="250" loading="lazy"></iframe>
+            <h3>Embedded Reference Wikipedia</h3>
+            <iframe src="index.html" width="500" height="250" ></iframe>
 
             <h3>Course Document Object</h3>
             <object data="day-03-task.pdf" type="application/pdf" width="400" height="150"></object>
 
-            <h3>Interactive Embed File</h3>
-            <embed src="https://via.placeholder.com/300x100" width="300" height="100" type="image/png">
         </section>
 
         <hr>
@@ -106,21 +89,27 @@
         <section id="faq">
             <h2>4. FAQ</h2>
 
-            <p>Next live lecture date: <time datetime="2026-10-25">October 25, 2026</time> at <time datetime="10:00">10:00 AM</time>.</p>
-
-            <dialog open>
-                <p><strong>Notice:</strong> Welcome to the new cohort! Please verify your attendance.</p>
-            </dialog>
+            <p>Next live lecture date: 
+                <time datetime="2026-10-25">October 25, 2026</time>
+                at
+                <time datetime="10:00">10:00 AM</time>.
+            </p>
 
             <h3>Frequently Asked Questions</h3>
             <details>
-                <summary>Do I need prior coding experience for this course?</summary>
-                <p>No, this training starts from the absolute basics of HTML.</p>
+                <summary>What is HTML?</summary>
+                <p>HTML structures webpages.</p>
             </details>
+
             <details>
-                <summary>Will we use CSS and JavaScript in this task?</summary>
-                <p>No, this assignment is focused on HTML markup and semantic tags.</p>
+                <summary>Do I need CSS?</summary>
+                <p>Not for this assignment.</p>
             </details>
+
+            <dialog open>
+                <p>Welcome to the course.</p>
+            </dialog>
+
         </section>
     </main>
 
@@ -130,8 +119,7 @@
         <p>&copy; 2026 HTML. All rights reserved.</p>
         
         <address>
-            Contact Instructor: <a href="mailto:instructor@bloomrix.edu">instructor@bloomrix.edu</a><br>
-            Location: Lahore, Pakistan
+            Contact Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a>
         </address>
     </footer>
     
