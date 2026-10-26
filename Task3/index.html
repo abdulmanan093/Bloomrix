@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Training program course page</title>
+    <meta name="description" content="HTML Training Program course page with lessons, media, and references.">
+    <title>HTML Training Program — Course Page</title>
 </head>
 <body>
 
     <header>
-        <h1>Training Program HTML</h1>
-        <p>This is beginner course to learn the HTML.</p>
+        <h1>HTML Training Program</h1>
+        <p>This is a beginner course to learn HTML.</p>
 
         <nav>
-            <a href="#overview">Course Overview</a>
-            <a href="#lessons">Lessons</a>
-            <a href="#media">Media</a>
+            <a href="#overview">Course Overview</a> |
+            <a href="#lessons">Lessons</a> |
+            <a href="#media">Media</a> |
+            <a href="#code-examples">Code Examples</a> |
+            <a href="#quotes">Quotes</a> |
             <a href="#faq">FAQ</a>
         </nav>
     </header>
@@ -22,106 +25,172 @@
     <hr>
 
     <main>
+
+        <!-- ==================== SECTION 1: OVERVIEW ==================== -->
         <section id="overview">
             <h2>1. Course Overview</h2>
-            <p>Overview about the Complete course. </p>
+            <p>An overview of the complete course and what you will learn.</p>
 
-            
             <figure>
                 <picture>
-                    <img src="image.png" alt="Google home page" width="400" height="150">
+                    <source media="(min-width: 800px)" srcset="image-large.png">
+                    <source media="(min-width: 400px)" srcset="image-medium.png">
+                    <img src="image.png" alt="Screenshot of a Google home page" width="400" height="150">
                 </picture>
-
-                <figcaption>figure: Overview fo the course</figcaption>
+                <figcaption>Overview of the course homepage.</figcaption>
             </figure>
-
         </section>
 
         <hr>
 
+        <!-- ==================== SECTION 2: LESSONS ==================== -->
         <section id="lessons">
             <h2>2. Course Lessons</h2>
 
             <article>
-                <h3>Lesson 1: HTML basics</h3>
-                <p>HTML stands for
-                    <abbr title="HyperText Markup Language">HTML</abbr>.
+                <h3>Lesson 1: HTML Basics</h3>
+                <p>
+                    <abbr title="HyperText Markup Language">HTML</abbr> stands for
+                    HyperText Markup Language and structures web pages.
                 </p>
             </article>
 
             <article>
                 <h3>Lesson 2: Semantic Tags</h3>
                 <p>Semantic tags explain the purpose of content.</p>
-                <p>Use <code>&lt;header&gt;</code> for a header.</p>
+                <p>Use <code>&lt;header&gt;</code> for a header and <code>&lt;nav&gt;</code> for navigation.</p>
             </article>
 
             <aside>
                 <h3>Quick Tip</h3>
-                <p>Practise writing HTML every day.</p>
+                <p>Practice writing HTML every day.</p>
             </aside>
         </section>
 
         <hr>
 
+        <!-- ==================== SECTION 3: MEDIA ==================== -->
         <section id="media">
-            <h2>3. Audio and Video lessons</h2>
+            <h2>3. Audio and Video Lessons</h2>
 
             <h3>Course Introduction Audio</h3>
             <audio controls>
                 <source src="audio-sample.mp3" type="audio/mpeg">
+                <source src="audio-sample.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
             </audio>
 
             <h3>Lesson Walkthrough Video</h3>
-            <video width="400" height="250" controls>
+            <video width="400" height="250" controls poster="video-poster.png">
                 <source src="video-sample.mp4" type="video/mp4">
+                <source src="video-sample.webm" type="video/webm">
+                <track src="captions-en.vtt" kind="captions" srclang="en" label="English" default>
+                Your browser does not support the video element.
             </video>
 
-            <h3>Embedded Reference Wikipedia</h3>
-            <iframe src="index.html" width="500" height="250" ></iframe>
+            <h3>Embedded Wikipedia Reference</h3>
+            <iframe
+                src="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                width="500"
+                height="250"
+                title="MDN HTML Documentation"
+                loading="lazy">
+            </iframe>
 
             <h3>Course Document Object</h3>
-            <object data="day-03-task.pdf" type="application/pdf" width="400" height="150"></object>
+            <object data="day-03-task.pdf" type="application/pdf" width="400" height="150">
+                <p>PDF cannot be displayed. <a href="day-03-task.pdf">Download instead</a>.</p>
+            </object>
 
+            <h3>Embedded Content Example</h3>
+            <embed src="sample.pdf" type="application/pdf" width="300" height="150">
         </section>
 
         <hr>
 
-        <section id="faq">
-            <h2>4. FAQ</h2>
+        <!-- ==================== SECTION 4: CODE EXAMPLES ==================== -->
+        <section id="code-examples">
+            <h2>4. Code Examples</h2>
 
-            <p>Next live lecture date: 
+            <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your HTML file.</p>
+
+            <p>Minimal HTML page example:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <p>Expected output in the browser heading: <samp>Hello, World!</samp></p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SECTION 5: QUOTES ==================== -->
+        <section id="quotes">
+            <h2>5. Quotes and References</h2>
+
+            <blockquote cite="https://www.w3.org/standards/webdesign/htmlcss">
+                <p>"HTML is the foundation of the World Wide Web."</p>
+            </blockquote>
+
+            <p>
+                As Tim Berners-Lee said,
+                <q cite="https://www.w3.org/People/Berners-Lee/">The Web is for everyone</q>.
+            </p>
+
+            <p>
+                Reference: <cite>HTML Living Standard</cite> by WHATWG.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SECTION 6: FAQ ==================== -->
+        <section id="faq">
+            <h2>6. FAQ</h2>
+
+            <p>
+                Next live lecture date:
                 <time datetime="2026-10-25">October 25, 2026</time>
                 at
                 <time datetime="10:00">10:00 AM</time>.
             </p>
 
             <h3>Frequently Asked Questions</h3>
+
             <details>
                 <summary>What is HTML?</summary>
-                <p>HTML structures webpages.</p>
+                <p>HTML structures web pages.</p>
             </details>
 
             <details>
-                <summary>Do I need CSS?</summary>
-                <p>Not for this assignment.</p>
+                <summary>Do I need CSS for this assignment?</summary>
+                <p>No. This assignment uses HTML only.</p>
             </details>
 
+            <!-- 'open' shows the dialog by default because JavaScript is not allowed -->
             <dialog open>
-                <p>Welcome to the course.</p>
+                <p>Welcome to the course!</p>
             </dialog>
-
         </section>
+
     </main>
 
     <hr>
 
     <footer>
-        <p>&copy; 2026 HTML. All rights reserved.</p>
-        
+        <p>&copy; 2026 HTML Training Program. All rights reserved.</p>
+
         <address>
-            Contact Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+            Contact Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a><br>
+            Course Website: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML Docs</a>
         </address>
     </footer>
-    
+
 </body>
 </html>
